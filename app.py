@@ -39,7 +39,7 @@ def fetch_labels():
         raise e
 
 
-# label post API
+# label Post API
 @app.post("add_label/{label_name}")
 def add_label(label_name: str):
 
