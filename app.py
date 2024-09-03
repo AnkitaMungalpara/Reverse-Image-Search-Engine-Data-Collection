@@ -159,5 +159,4 @@ def bulk_upload(label, files: List[UploadFile] = File(...)):
 
 
 if __name__ == "__main__":
-    #print("testing")
     uvicorn.run(app, host="0.0.0.0", port=8080)
