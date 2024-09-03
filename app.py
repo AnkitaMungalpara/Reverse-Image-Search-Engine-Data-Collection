@@ -134,7 +134,7 @@ def bulk_upload(label, files: List[UploadFile] = File(...)):
 
         if label:
             for file in files:
-                # check if file is JPEG
+                # check if the file is JPEG
                 if file.content_type == "image/jpeg":
                     # upload to S3
                     response = s3.upload_to_s3(file.file, label)
