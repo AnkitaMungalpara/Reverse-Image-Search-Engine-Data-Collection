@@ -78,7 +78,7 @@ def single_upload():
 @app.post("/single_upload/")
 async def single_upload(label, file: UploadFile = None):
     """
-    Responsible for single image upload to S3.
+    Responsible for single image uploading to S3.
 
     Args:
         label (str): label for the image
